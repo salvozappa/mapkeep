@@ -21,7 +21,10 @@ class Map extends React.Component {
         });
         this.mapbox.addControl(new MapboxGL.NavigationControl(), 'bottom-right');
         this.mapbox.addControl(new MapboxGL.AttributionControl({
-            customAttribution: '&#169; <a href="https://github.com/openmaptiles/openmaptiles/blob/3a1a2b4210935d0a898e4c36672836b69eecb61e/LICENSE.md" target="_blank">OpenMapTiles</a> &#169; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>'
+            customAttribution: `
+                Development still in progress. Source code on <a href="https://github.com/mapkeep/mapkeep" target="_blank">GitHub</a>.<br>
+                &#169; <a href="https://github.com/openmaptiles/openmaptiles/blob/3a1a2b4210935d0a898e4c36672836b69eecb61e/LICENSE.md" target="_blank">OpenMapTiles</a> &#169; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>
+            `
         }), 'bottom-left');
         if (process.env.NODE_ENV === 'development') {
             window.mapbox = this.mapbox;
