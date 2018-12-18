@@ -8,7 +8,13 @@ You can find a demo instance at http://mapkeep.com
 
 # Requirements
 
-* Node 10
+Tested on node 10, probably works on node 8 too
+
+# Install
+
+```
+npm install
+```
 
 # Build
 
