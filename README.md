@@ -16,33 +16,26 @@ Tested on node 10, probably works on node 8 too
 npm install
 ```
 
-# Build
+# Development
 
-For a development build:
+To build and run a webpack development server:
+
+```
+npm run development
+```
+
+The default port for the development server is `8080`.
+
+To build without running the development server:
 
 ```
 npm run build
 ```
 
-To build on every file change:
-
-```
-npm run watch
-```
-
-# Run
-
-```
-docker run -it \
-    -p 8080:80/tcp \
-    -v "$PWD/dist:/usr/share/nginx/html:ro" \
-    -d \
-    --name mapkeep-frontend \
-    nginx
-```
-
 # Deploy
 
+If your ssh key is authorized on the server, you can deploy by running the following command:
+
 ```
-npm run build-production && rsync -ar --del --progress dist/ root@mapkeep.com:/var/www/html
+npm run deploy
 ```
