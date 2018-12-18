@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --mode=development",
     "build-production": "webpack --mode=production",
+    "deploy": "webpack --mode=production && rsync -ar --del --progress dist/ root@mapkeep.com:/var/www/html",
     "development": "webpack-dev-server",
     "watch": "webpack --watch",
     "test": "mocha"
