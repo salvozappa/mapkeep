@@ -1,0 +1,194 @@
+/*
+    FONTS
+*/
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/assets/fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/assets/fonts/OpenSans-Italic.woff") format("woff");
+    font-weight: normal;
+font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/assets/fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
+/*
+    GENERAL
+*/
+
+body {
+    font-family: "Open Sans";
+    margin:0;
+    padding:0;
+}
+
+#logo, h1, h2, h3 {
+    font-family: "Montserrat"
+}
+
+#logo {
+    cursor: default;
+    color: #222;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    user-select: none;
+}
+
+#logo img {
+    width: 50px;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.2));
+}
+
+#logo span {
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    bottom: 16px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/*
+    MAP
+*/
+
+#map {
+    position: absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+}
+
+.mapboxgl-ctrl-attrib p {
+    margin: 0;
+    padding: 0.3em;
+}
+
+#geolocation-marker {
+    width: 13px;
+    height: 13px;
+    background-color: #0066ff;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/*
+    UI
+*/
+
+.overlay {
+    position: relative;
+    background-color: white;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    z-index: 1;
+    margin-bottom: 10px;
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.main-panel {
+    margin: 10px;
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+}
+
+.search-result {
+    padding: 1em;
+}
+
+.search-result ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 1em 0.5em;
+}
+
+li:not(:last-of-type) {
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.search-result {
+    cursor: pointer;
+}
+
+.detail h1 {
+    font-size: 1.33em;
+}
+
+input[name=search] {
+    background-image: url(/assets/magnifying-glass.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 1.5em;
+}
+
+.geolocation-icon {
+    background-image: url(/assets/geolocation.svg);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.close-button {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    background-image: url(/assets/close.svg);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left: 348px;
+}
+
+@media (max-width: 768px) {
+    #logo {
+        top: unset;
+        bottom: 0;
+        right: 50px;
+    }
+
+    .main-panel {
+        width: calc(100vw - 20px);
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        margin-right: 0;
+    }
+
+    #logo img {
+        width: 30px;
+    }
+
+    #logo span {
+        display: none;
+    }
+}
