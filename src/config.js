@@ -5,7 +5,7 @@ const config = {
         mapStyle: 'style.development.json'
     },
     production: {
-        tileserverUrl: 'http://tileserver.mapkeep.com/',
+        tileserverUrl: 'https://tileserver.mapkeep.com/',
         nominatimUrl: 'http://nominatim.mapkeep.com/',
         mapStyle: 'style.json'
     },
