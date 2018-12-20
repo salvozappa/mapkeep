@@ -6,7 +6,7 @@ const config = {
     },
     production: {
         tileserverUrl: 'https://tileserver.mapkeep.com/',
-        nominatimUrl: 'http://nominatim.mapkeep.com/',
+        nominatimUrl: 'https://nominatim.openstreetmap.org/',
         mapStyle: 'style.json'
     },
 }
