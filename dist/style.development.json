@@ -41,12 +41,12 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "tiles": [ "http://localhost:3000/tiles/{z}/{x}/{y}.pbf" ],
+      "tiles": [ "https://tileserver.mapkeep.com/tiles/{z}/{x}/{y}.pbf" ],
       "maxzoom": 14
     }
   },
   "sprite": "http://localhost:8080/assets/sprite",
-  "glyphs": "http://localhost:3000/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://tileserver.mapkeep.com/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
