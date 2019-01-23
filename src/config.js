@@ -1,7 +1,7 @@
 const config = {
     development: {
         tileserverUrl: 'http://localhost:3000/',
-        nominatimUrl: 'https://nominatim.mapkeep.com',
+        nominatimUrl: 'https://nominatim.openstreetmap.org/',
         mapStyle: 'style.development.json'
     },
     production: {
