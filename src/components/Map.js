@@ -2,8 +2,6 @@ import React from 'react';
 import MapboxGL from 'mapbox-gl';
 import ReactDOM from 'react-dom';
 
-const { mapStyle } = require('../config');
-
 class Map extends React.Component {
     constructor(props) {
         super(props);
@@ -14,7 +12,7 @@ class Map extends React.Component {
     componentDidMount() {
         this.mapbox = new MapboxGL.Map({
             container: 'map',
-            style: mapStyle,
+            style: 'style.json',
             center: this.props.center,
             zoom: this.props.zoom,
             attributionControl: false
