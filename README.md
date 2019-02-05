@@ -1,4 +1,4 @@
-# Mapkeep ─ Frontend
+# Mapkeep
 
 https://mapkeep.com
 
