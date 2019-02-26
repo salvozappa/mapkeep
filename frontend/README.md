@@ -20,7 +20,7 @@ To run a local development server:
 npm run development
 ```
 
-This will run an instance of [webpack-web-server](https://mapkeep.com) on port `8080`, with automatic build and hot-reloading.
+This will run an instance of [webpack-web-server](https://webpack.js.org/configuration/dev-server/) on port `8080`, with hot-reloading.
 
 ## Build
 

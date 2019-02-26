@@ -6,9 +6,15 @@
 
 ## Install
 
+Install the node dependencies:
+
 ```
 npm install
 ```
+
+To serve the tiles, you need them to be saved in this folder in a file named `tiles.mbtiles`.
+
+To generate the tiles yourself, please check out the [OpenMapTiles](https://openmaptiles.org/) project. They also provide pre-rendered files to download.
 
 ## Start daemon
 
